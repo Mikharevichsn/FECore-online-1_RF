@@ -1,0 +1,236 @@
+:root {
+  --font-main: 'Open Sans', sans-serif;
+  --font-second: 'Raleway', sans-serif;
+  --font-main-color: #303030;
+  --font-second-color: #9da4bd;
+  --accent: #ff6c00;
+  --description-dark-color: #555555;
+}
+
+/* ======== COMPONENTS ======= */
+body {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+  color: var(--description-dark-color);
+}
+
+h1,
+h2 {
+  font-family: var(--font-second);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.667;
+  letter-spacing: 0.05em;
+}
+
+.address {
+  font-style: normal;
+}
+
+.list-no-style {
+  list-style: none;
+}
+
+.modal-open-btn {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.modal-open-btn-light {
+  color: #ffffff;
+}
+
+.modal-open-btn-dark {
+  color: var(--font-main-color);
+}
+
+.subtitle {
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.subtitle-dark {
+  color: var(--font-main-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.description-light {
+  color: var(--font-second-color);
+}
+
+.description-dark {
+  color: var(--description-dark-color);
+}
+/* ======== /COMPONENTS ======= */
+
+/* ======== HEADER ======= */
+.header a,
+.header a:visited {
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+.header a:hover,
+.header a:active,
+.header a:focus {
+  color: var(--accent);
+}
+/* ======== /HEADER ======= */
+
+/* ======== TOP ======= */
+.top-left a,
+.top-left a:visited {
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--font-main-color);
+}
+
+.top-left a:hover,
+.top-left a:active,
+.top-left a:focus {
+  color: var(--accent);
+}
+
+.top-right h1 {
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  /* color: #ffffff; */
+}
+/* ======== /TOP ======= */
+
+/* ======== О НАС ======= */
+/* ======== /О НАС ======= */
+
+/* ======== Услуги и цены ======= */
+.services h2 {
+  /* color: #ffffff; */
+}
+
+.services ul span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--font-second-color);
+}
+/* ======== /Услуги и цены ======= */
+
+/* ======== achievements ======= */
+.achievements h2 {
+  color: var(--font-main-color);
+}
+
+.achievements-left p {
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: center;
+  color: var(--font-main-color);
+}
+
+.achievements-left .number {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.achievements-left sup {
+  color: var(--accent);
+}
+/* ======== /achievements ======= */
+
+/* ======== НАШИ МАСТЕРА ======= */
+.masters h2 {
+  color: var(--font-main-color);
+}
+
+.masters h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.389;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--font-main-color);
+}
+
+.masters ul p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+/* ======== /НАШИ МАСТЕРА ======= */
+
+/* ======== КОНТАКТЫ ======= */
+.contacts h2 {
+  /* color: #ffffff; */
+}
+
+.contacts a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.678;
+  letter-spacing: 0.02em;
+  color: var(--font-second-color);
+}
+.contacts p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--font-second-color);
+}
+/* ======== /КОНТАКТЫ ======= */
+
+.footer p {
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--font-second-color);
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+  color: var(--accent);
+}
