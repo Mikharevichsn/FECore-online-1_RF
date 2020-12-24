@@ -19,6 +19,7 @@ a {
 }
 
 p {
+  margin: 0;
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;
@@ -28,13 +29,15 @@ p {
 
 h1,
 h2 {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: var(--font-second);
   font-weight: bold;
 }
 
 h2 {
   font-size: 42px;
-  line-height: 1.667;
+  line-height: 1.167;
   letter-spacing: 0.05em;
 }
 
@@ -44,6 +47,18 @@ h2 {
 
 .list-no-style {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 130px 0;
 }
 
 .modal-open-btn {
@@ -54,6 +69,11 @@ h2 {
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  padding: 12px 18px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid var(--accent);
+  border-radius: 25px;
 }
 
 .modal-open-btn-light {
@@ -65,6 +85,7 @@ h2 {
 }
 
 .subtitle {
+  margin-bottom: 20px;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
@@ -96,6 +117,39 @@ h2 {
 /* ======== /COMPONENTS ======= */
 
 /* ======== HEADER ======= */
+.header {
+  background-color: aqua;
+  padding: 40px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+
+.header .logo {
+  margin-right: 70px;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu ul {
+  display: flex;
+}
+
+.header .menu ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
 .header a,
 .header a:visited {
   font-size: 12px;
@@ -112,6 +166,36 @@ h2 {
 /* ======== /HEADER ======= */
 
 /* ======== TOP ======= */
+.top {
+  background-color: purple;
+}
+
+.top .container {
+  display: flex;
+  background-color: yellow;
+}
+
+.top-left {
+  width: 100px;
+}
+
+.top-left ul {
+  display: flex;
+}
+
+.top-left ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.top-right {
+  background-color: #fff;
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-right: 525px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+}
+
 .top-left a,
 .top-left a:visited {
   font-size: 11px;
@@ -128,18 +212,68 @@ h2 {
 
 .top-right h1 {
   font-size: 72px;
-  line-height: 85px;
+  line-height: 1.181;
   letter-spacing: 0.05em;
   /* color: #ffffff; */
 }
 /* ======== /TOP ======= */
 
 /* ======== О НАС ======= */
+.about {
+  background-color: grey;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about ul {
+  display: flex;
+}
+
+.about ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-right {
+  background-color: blueviolet;
+  padding-left: 64px;
+  width: 544px;
+}
+
+.about .description {
+  margin-bottom: 20px;
+}
+
+.about .modal-open-btn {
+  margin-top: 40px;
+}
 /* ======== /О НАС ======= */
 
 /* ======== Услуги и цены ======= */
+.services {
+  background-color: darkgoldenrod;
+}
+
 .services h2 {
   /* color: #ffffff; */
+}
+
+.services .prices {
+  display: flex;
+  margin-bottom: 50px;
+  background-color: cyan;
+}
+
+.services .prices ul {
+  width: 50%;
+  padding: 30px 40px;
+  outline: 1px dashed black;
+}
+
+.services .prices ul li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .services ul span {
@@ -149,9 +283,47 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--font-second-color);
 }
+
+.services .modal-open-btn {
+  display: block;
+  margin: 0 auto;
+}
 /* ======== /Услуги и цены ======= */
 
 /* ======== achievements ======= */
+.achievements .container {
+  display: flex;
+}
+
+.achievements-left {
+  width: 370px;
+  background-color: darkgreen;
+}
+
+.achievements-left ul {
+  display: flex;
+  background-color: darkgrey;
+}
+
+.achievements-left ul li {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px;
+  background-color: darkmagenta;
+  margin-bottom: 30px;
+}
+
+.achievements-left ul li:nth-child(even) {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.achievements-right {
+  padding-left: 130px;
+  padding-right: 200px;
+}
+
 .achievements h2 {
   color: var(--font-main-color);
 }
@@ -177,11 +349,18 @@ h2 {
 /* ======== /achievements ======= */
 
 /* ======== НАШИ МАСТЕРА ======= */
+.masters {
+  background-color: darkorange;
+}
+
 .masters h2 {
   color: var(--font-main-color);
+  margin-bottom: 44px;
 }
 
 .masters h3 {
+  margin-top: 30px;
+  margin-bottom: 8px;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.389;
@@ -191,7 +370,13 @@ h2 {
   color: var(--font-main-color);
 }
 
-.masters ul p {
+.masters ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.masters .job-position {
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.357;
@@ -201,9 +386,48 @@ h2 {
 }
 /* ======== /НАШИ МАСТЕРА ======= */
 
+/* ======== ГАЛЕРЕЯ ======= */
+.gallery .subtitle {
+  margin-bottom: 44px;
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* ======== /ГАЛЕРЕЯ ======= */
+
 /* ======== КОНТАКТЫ ======= */
+.contacts {
+  background-color: darksalmon;
+}
+
+.contacts .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: deeppink;
+}
+
+.contacts-right {
+  width: 50%;
+  padding: 130px 100px;
+}
+
+.contacts .subtitle {
+  margin-top: 70px;
+}
+
 .contacts h2 {
+  margin-bottom: 40px;
   /* color: #ffffff; */
+}
+
+.contacts .city {
+  width: 190px;
+}
+
+.contacts ul li {
+  margin-bottom: 20px;
 }
 
 .contacts a {
@@ -221,12 +445,30 @@ h2 {
   color: var(--font-second-color);
 }
 /* ======== /КОНТАКТЫ ======= */
+.footer {
+  padding: 56px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .footer p {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: var(--font-second-color);
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer ul li:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer a:hover,
