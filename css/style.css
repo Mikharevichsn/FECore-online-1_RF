@@ -74,6 +74,7 @@ h2 {
   height: 40px;
   border: 1px solid var(--accent);
   border-radius: 25px;
+  background: none;
 }
 
 .modal-open-btn-light {
@@ -90,14 +91,32 @@ h2 {
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
 }
 
 .subtitle-light {
   color: rgba(157, 164, 189, 0.6);
 }
 
+.subtitle-light::before {
+  background: rgba(157, 164, 189, 0.6);
+}
+
 .subtitle-dark {
   color: var(--font-main-color);
+}
+
+.subtitle-dark::before {
+  background: var(--font-main-color);
 }
 
 .description {
@@ -164,9 +183,6 @@ h2 {
 /* ======== /HEADER ======= */
 
 /* ======== TOP ======= */
-.top {
-}
-
 .top .container {
   display: flex;
 }
@@ -177,6 +193,17 @@ h2 {
 
 .top-left ul {
   display: flex;
+  align-items: center;
+}
+
+.top-left ul::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background: var(--font-main-color);
+  flex-shrink: 0;
+  margin-right: 40px;
 }
 
 .top-left ul li:not(:last-child) {
@@ -189,6 +216,13 @@ h2 {
   padding-right: 525px;
   padding-bottom: 206px;
   padding-left: 100px;
+  background-color: #000;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../img/bg-top.jpg');
+  background-repeat: no-repeat;
 }
 
 .top-left a,
@@ -209,7 +243,7 @@ h2 {
   font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 /* ======== /TOP ======= */
 
@@ -245,10 +279,14 @@ h2 {
 
 /* ======== Услуги и цены ======= */
 .services {
+  background-color: #111319;
+  background-image: url('../img/bg-services.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services h2 {
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .services .prices {
@@ -261,9 +299,22 @@ h2 {
   padding: 30px 40px;
 }
 
+.services .prices ul:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services .prices ul:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .services .prices ul li {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.services .prices ul li:last-child {
+  margin-bottom: 0;
 }
 
 .services ul span {
@@ -337,6 +388,7 @@ h2 {
 
 /* ======== НАШИ МАСТЕРА ======= */
 .masters {
+  background: #f7f7f7;
 }
 
 .masters h2 {
@@ -359,6 +411,35 @@ h2 {
 .masters ul {
   display: flex;
   justify-content: space-between;
+}
+
+.masters .icons-list {
+  width: 206px;
+  margin: 0 auto;
+}
+
+.masters__list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+}
+
+.masters__list-link:hover {
+  background-color: #000;
+}
+
+.masters__list-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.masters__list-link:hover svg,
+.masters__list-link:focus svg {
+  fill: var(--accent);
 }
 
 .masters .job-position {
@@ -449,6 +530,15 @@ h2 {
 .footer ul {
   display: flex;
   align-items: center;
+}
+
+.footer ul::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background: var(--font-main-color);
+  margin-right: 40px;
 }
 
 .footer ul li:not(:last-child) {
