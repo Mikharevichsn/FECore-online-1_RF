@@ -75,6 +75,13 @@ h2 {
   border: 1px solid var(--accent);
   border-radius: 25px;
   background: none;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.modal-open-btn:hover {
+  background-color: var(--accent);
+  color: #fff;
 }
 
 .modal-open-btn-light {
@@ -133,10 +140,63 @@ h2 {
 .description-dark {
   color: var(--description-dark-color);
 }
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop .modal {
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  animation-duration: 1000ms;
+}
+
+.backdrop .modal .modal-close-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  transition: background-color 250ms, color 500ms;
+}
+
+.backdrop .modal .modal-close-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
 /* ======== /COMPONENTS ======= */
 
 /* ======== HEADER ======= */
 .header {
+  position: absolute;
+  width: 100%;
+  /* left: 50%;
+  top: 0;
+  transform: translate(-50%, 0); */
   padding: 40px 0;
 }
 
@@ -147,6 +207,8 @@ h2 {
 
 .header .logo {
   margin-right: 70px;
+  animation-duration: 500ms;
+  animation-iteration-count: 4;
 }
 
 .header .menu {
@@ -172,7 +234,9 @@ h2 {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
-  /* color: #ffffff; */
+  color: #ffffff;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 
 .header a:hover,
@@ -189,11 +253,17 @@ h2 {
 
 .top-left {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 23px;
+  padding-bottom: 40px;
 }
 
 .top-left ul {
   display: flex;
   align-items: center;
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .top-left ul::before {
@@ -231,6 +301,8 @@ h2 {
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: var(--font-main-color);
+  transition-duration: 250ms;
+  transition-property: color;
 }
 
 .top-left a:hover,
@@ -426,6 +498,7 @@ h2 {
   background-color: #ffffff;
   width: 44px;
   height: 44px;
+  transition: all 500ms;
 }
 
 .masters__list-link:hover {
@@ -543,6 +616,15 @@ h2 {
 
 .footer ul li:not(:last-child) {
   margin-right: 40px;
+}
+
+.footer a {
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--font-main-color);
+  transition-duration: 250ms;
+  transition-property: color;
 }
 
 .footer a:hover,
