@@ -208,11 +208,13 @@ h2 {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
 }
 
 .modal-form textarea {
   height: 120px;
   padding: 12px 16px;
+  resize: none;
 }
 
 .modal-form label {
@@ -261,7 +263,6 @@ h2 {
   text-decoration: underline;
   color: blue;
 }
-/* focus-within */
 
 .input-wrapper {
   position: relative;
@@ -271,27 +272,47 @@ h2 {
 .input-wrapper svg {
   width: 18px;
   height: 18px;
-  background-color: salmon;
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
 
-.input-wrapper:hover svg {
-  background-color: skyblue;
-  --color-1: red;
+.modal-form-label:focus-within input {
+  border: 1px solid #2196f3;
 }
 
-.input-wrapper::before path {
-  --color-1: red;
+.modal-form-label:focus-within svg path {
+  fill: #2196f3;
 }
 
-.modal-form-label-name .input-wrapper::before {
-  background-image: url('../img/modal-form-name.svg');
+.checkbox-text {
+  display: flex;
+  align-items: center;
 }
 
-/* fill="#2196F3" */
+.checkbox-text::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  outline: 1px solid black;
+  background-origin: padding-box;
+  margin-right: 10px;
+}
+
+.modal-checkbox {
+  appearance: none;
+}
+
+.modal-checkbox:checked + .checkbox-text::before {
+  background-color: cyan;
+  border: 4px solid #fff;
+}
+
+/* .label-checkbox:focus-within::before {
+} */
+
 /* ---- /modal-form ---- */
 /* ======== /COMPONENTS ======= */
 
