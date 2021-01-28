@@ -313,32 +313,41 @@
     </section>
     <!-- /ГАЛЕРЕЯ -->
     <!-- КОНТАКТЫ -->
-    <section class="contacts section">
-      <div class="container">
-        <div></div>
-        <!-- тут будет форма -->
-        <div class="contacts-right">
-          <h2>Контакты</h2>
-          <ul class="list-no-style">
-            <li>
-              <address class="address city">
-                <a href="#">ул. Васильковая, 7А Киев, 08132</a>
-              </address>
-            </li>
-            <li>
-              <address class="address">
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-              </address>
-            </li>
-            <li>
-              <address class="address">
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-              </address>
-            </li>
-          </ul>
-          <p class="subtitle subtitle-light">время работы</p>
-          <p>Ежедневно с 9:00 до 22:00</p>
+    <section class="contacts">
+      <div class="contacts-left section">
+        <div class="form-wrapper">
+          <h2>Онлайн-запись</h2>
+          <form action="" class="form">
+            <input type="text" class="form-input form-input-name" name="user-name" placeholder="Имя*" required
+              pattern="[А-Яа-я]{2,}">
+            <input type="tel" class="form-input form-input-phone" name="user-phone" placeholder="Телефон*" required
+              pattern="\+[0-9]{11}">
+            <textarea name="user-message" class="form-textarea" placeholder="сообщение"></textarea>
+            <button type="submit" class="form-submit-btn form-submit-btn-light">отправить</button>
+          </form>
         </div>
+      </div>
+      <div class="contacts-right section">
+        <h2>Контакты</h2>
+        <ul class="list-no-style">
+          <li>
+            <address class="address city">
+              <a href="#">ул. Васильковая, 7А Киев, 08132</a>
+            </address>
+          </li>
+          <li>
+            <address class="address">
+              <a href="tel:+380441111111">+38 044 111 11 11</a>
+            </address>
+          </li>
+          <li>
+            <address class="address">
+              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            </address>
+          </li>
+        </ul>
+        <p class="subtitle subtitle-light">время работы</p>
+        <p>Ежедневно с 9:00 до 22:00</p>
       </div>
     </section>
     <!-- /КОНТАКТЫ -->

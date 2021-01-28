@@ -61,7 +61,8 @@ h2 {
   padding: 130px 0;
 }
 
-.modal-open-btn {
+.modal-open-btn,
+.form-submit-btn {
   font-family: var(--font-main);
   font-style: normal;
   font-weight: 600;
@@ -79,12 +80,14 @@ h2 {
   transition: all 250ms;
 }
 
-.modal-open-btn:hover {
+.modal-open-btn:hover,
+.form-submit-btn:hover {
   background-color: var(--accent);
   color: #fff;
 }
 
-.modal-open-btn-light {
+.modal-open-btn-light,
+.form-submit-btn-light {
   color: #ffffff;
 }
 
@@ -539,14 +542,86 @@ h2 {
 
 /* ======== КОНТАКТЫ ======= */
 .contacts {
-}
-
-.contacts .container {
   display: flex;
   justify-content: space-between;
+  background-color: #191c26;
+}
+
+.contacts-left,
+.contacts-right {
+  width: 50%;
+}
+
+.contacts-left {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.contacts-left .form {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-input,
+.form-textarea {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  padding: 8px 0;
+
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+}
+
+.form-input:focus::placeholder,
+.form-textarea:focus::placeholder {
+  color: #fff;
+}
+
+/* .form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+} */
+
+.form-input-name {
+  width: 270px;
+}
+
+.form-input-phone {
+  width: 260px;
+}
+
+.form-textarea {
+  width: 100%;
+  margin: 44px 0;
+  resize: none;
+  height: 90px;
 }
 
 .contacts-right {
+  background-image: url('../img/bg-contacts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
   padding: 130px 100px;
 }
@@ -557,7 +632,7 @@ h2 {
 
 .contacts h2 {
   margin-bottom: 40px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .contacts .city {
