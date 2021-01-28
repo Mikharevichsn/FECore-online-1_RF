@@ -171,6 +171,7 @@ h2 {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   animation-duration: 1000ms;
+  padding: 40px;
 }
 
 .backdrop .modal .modal-close-btn {
@@ -191,6 +192,107 @@ h2 {
   background-color: #000;
   color: #fff;
 }
+
+/* ---- modal-form ---- */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-form input:not([type='checkbox']),
+.modal-form textarea {
+  display: block;
+  height: 40px;
+  margin-top: 4px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-form textarea {
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.modal-form label {
+  margin-bottom: 10px;
+}
+
+.modal-form .modal-form-submit-btn {
+  align-self: center;
+
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 55px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  transform: opacity 250ms linear;
+}
+
+.modal-form .modal-form-submit-btn:hover {
+  opacity: 0.8;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.label-checkbox span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.modal-form a {
+  text-decoration: underline;
+  color: blue;
+}
+/* focus-within */
+
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.input-wrapper svg {
+  width: 18px;
+  height: 18px;
+  background-color: salmon;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.input-wrapper:hover svg {
+  background-color: skyblue;
+  --color-1: red;
+}
+
+.input-wrapper::before path {
+  --color-1: red;
+}
+
+.modal-form-label-name .input-wrapper::before {
+  background-image: url('../img/modal-form-name.svg');
+}
+
+/* fill="#2196F3" */
+/* ---- /modal-form ---- */
 /* ======== /COMPONENTS ======= */
 
 /* ======== HEADER ======= */

@@ -361,9 +361,44 @@
       </ul>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
+    <!-- вернуть is-hidden -->
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>X</button>
+      <h3>Оставьте свои данные, мы вам перезвоним</h3>
+      <form class="modal-form" action="#" method="GET">
+        <label class="modal-form-label-name">
+          Имя*
+          <span class="input-wrapper">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                fill="#212121" />
+            </svg>
+            <input type="text" class="modal-form-input form-input-name" name="user-name" required
+              pattern="[А-Яа-я]{2,}">
+          </span>
+        </label>
+        <label>
+          Телефон*
+          <input type="tel" class="modal-form-input form-input-phone" name="user-phone" required pattern="\+[0-9]{11}">
+        </label>
+        <label>
+          Почта
+          <input type="email" class="modal-form-input form-input-phone" name="user-phone">
+        </label>
+        <label>
+          Комментарий
+          <textarea name="user-message" class="modal-form-textarea" placeholder="Введите текст"></textarea>
+        </label>
+        <label class="label-checkbox">
+          <input type="checkbox" name="contract" value="accept" required>
+          <span>
+            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+          </span>
+        </label>
+        <button type="submit" class="modal-form-submit-btn">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./modal.js"></script>
