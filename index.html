@@ -43,7 +43,7 @@
       <address class="address">
         <a href="tel:+380441111111">+38 044 111 11 11</a>
       </address>
-      <button class="modal-open-btn modal-open-btn-light" data-modal-open>
+      <button class="modal-open-btn modal-open-btn_light" data-modal-open>
         онлайн-запись
       </button>
     </div>
@@ -52,11 +52,11 @@
   <main>
     <!-- TOP -->
     <section class="top">
-      <div class="container">
-        <div class="top-left">
-          <ul class="list-no-style">
-            <li><a href="#" lang="en">Instagram</a></li>
-            <li><a href="#" lang="en">Youtube</a></li>
+      <div class="container top__container">
+        <div class="top__left">
+          <ul class="social-links top__social-links list-no-style">
+            <li class="social-links__list-item"><a href="#" class="social-links__link" lang="en">Instagram</a></li>
+            <li class="social-links__list-item"><a href="#" class="social-links__link" lang="en">Youtube</a></li>
           </ul>
         </div>
         <div class="top-right">
@@ -95,7 +95,7 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button class="modal-open-btn modal-open-btn-dark" data-modal-open>
+          <button class="modal-open-btn modal-open-btn_dark" data-modal-open>
             онлайн-запись
           </button>
         </div>
@@ -129,7 +129,7 @@
             </li>
           </ul>
         </div>
-        <button class="modal-open-btn modal-open-btn-light" data-modal-open>
+        <button class="modal-open-btn modal-open-btn_light" data-modal-open>
           онлайн-запись
         </button>
       </div>
@@ -323,7 +323,7 @@
             <input type="tel" class="form-input form-input-phone" name="user-phone" placeholder="Телефон*" required
               pattern="\+[0-9]{11}">
             <textarea name="user-message" class="form-textarea" placeholder="сообщение"></textarea>
-            <button type="submit" class="form-submit-btn form-submit-btn-light">отправить</button>
+            <button type="submit" class="form-submit-btn form-submit-btn_light">отправить</button>
           </form>
         </div>
       </div>
@@ -355,13 +355,13 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; Copyright 2020</p>
-      <ul class="list-no-style">
-        <li><a href="#" lang="en">Instagram</a></li>
-        <li><a href="#" lang="en">Youtube</a></li>
+      <ul class="social-links list-no-style">
+        <li class="social-links__list-item"><a href="#" class="social-links__link" lang="en">Instagram</a></li>
+        <li class="social-links__list-item"><a href="#" class="social-links__link" lang="en">Youtube</a></li>
       </ul>
     </div>
   </footer>
-  <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <!-- вернуть is-hidden -->
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>X</button>
