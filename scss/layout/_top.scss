@@ -8,25 +8,11 @@
   align-items: flex-end;
   padding-left: 23px;
   padding-bottom: 40px;
-}
 
-.top__social-links {
-  transform: rotate(-90deg);
-  transform-origin: left top;
-}
-
-.top-left ul::before {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 60px;
-  background: $font-main-color;
-  flex-shrink: 0;
-  margin-right: 40px;
-}
-
-.top-left ul li:not(:last-child) {
-  margin-right: 40px;
+  .top__social-links {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+  }
 }
 
 .top-right {
@@ -42,11 +28,11 @@
     ),
     url('../img/bg-top.jpg');
   background-repeat: no-repeat;
-}
 
-.top-right h1 {
-  font-size: 72px;
-  line-height: 1.181;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+  h1 {
+    font-size: 72px;
+    line-height: 1.181;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
 }

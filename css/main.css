@@ -255,6 +255,14 @@ h2 {
   margin-bottom: 10px;
 }
 
+.modal-form label:focus-within input {
+  border: 1px solid #2196f3;
+}
+
+.modal-form label:focus-within svg path {
+  fill: #2196f3;
+}
+
 .modal-form .modal-form-submit-btn {
   align-self: center;
   background: #188ce8;
@@ -282,19 +290,11 @@ h2 {
   color: blue;
 }
 
-.modal-form-label:focus-within input {
-  border: 1px solid #2196f3;
-}
-
-.modal-form-label:focus-within svg path {
-  fill: #2196f3;
-}
-
-.modal-checkbox {
+.modal-form .modal-checkbox {
   appearance: none;
 }
 
-.modal-checkbox:checked + .checkbox-text::before {
+.modal-form .modal-checkbox:checked + .checkbox-text::before {
   background-color: cyan;
   border: 4px solid #fff;
 }
@@ -426,8 +426,7 @@ h2 {
   margin-right: 40px;
 }
 
-.header a,
-.header a:visited {
+.header a {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
@@ -436,9 +435,7 @@ h2 {
   transition-duration: 250ms;
 }
 
-.header a:hover,
-.header a:active,
-.header a:focus {
+.header a:hover, .header a:active, .header a:focus {
   color: #ff6c00;
 }
 
@@ -454,23 +451,9 @@ h2 {
   padding-bottom: 40px;
 }
 
-.top__social-links {
+.top__left .top__social-links {
   transform: rotate(-90deg);
   transform-origin: left top;
-}
-
-.top-left ul::before {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 60px;
-  background: #303030;
-  flex-shrink: 0;
-  margin-right: 40px;
-}
-
-.top-left ul li:not(:last-child) {
-  margin-right: 40px;
 }
 
 .top-right {
@@ -555,7 +538,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.services ul span {
+.services .prices ul span {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
@@ -572,44 +555,39 @@ h2 {
   display: flex;
 }
 
-.achievements-left {
+.achievements h2 {
+  color: #303030;
+}
+
+.achievements .achievements-left {
   width: 370px;
 }
 
-.achievements-left ul {
+.achievements .achievements-left ul {
   display: flex;
 }
 
-.achievements-left ul li {
+.achievements .achievements-left ul li {
   width: 170px;
   min-height: 133px;
   padding: 20px;
   margin-bottom: 30px;
 }
 
-.achievements-left ul li:nth-child(even) {
+.achievements .achievements-left ul li:nth-child(even) {
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 0;
 }
 
-.achievements-right {
-  padding-left: 130px;
-  padding-right: 200px;
-}
-
-.achievements h2 {
-  color: #303030;
-}
-
-.achievements-left p {
+.achievements .achievements-left p {
   font-size: 11px;
   line-height: 1.364;
   text-align: center;
   color: #303030;
 }
 
-.achievements-left .number {
+.achievements .achievements-left .number {
   font-weight: bold;
   font-size: 42px;
   line-height: 1.357;
@@ -617,8 +595,13 @@ h2 {
   letter-spacing: 0.05em;
 }
 
-.achievements-left sup {
+.achievements .achievements-left sup {
   color: #ff6c00;
+}
+
+.achievements .achievements-right {
+  padding-left: 130px;
+  padding-right: 200px;
 }
 
 .masters {
@@ -696,18 +679,18 @@ h2 {
   background-color: #191c26;
 }
 
-.contacts-left,
-.contacts-right {
+.contacts .contacts-left,
+.contacts .contacts-right {
   width: 50%;
 }
 
-.contacts-left {
+.contacts .contacts-left {
   display: flex;
   justify-content: flex-end;
   padding-right: 40px;
 }
 
-.contacts-left .form {
+.contacts .contacts-left .form {
   width: 560px;
   display: flex;
   justify-content: space-between;
@@ -715,7 +698,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.contacts-right {
+.contacts .contacts-right {
   background-image: url("../img/bg-contacts.png");
   background-repeat: no-repeat;
   background-size: cover;

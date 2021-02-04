@@ -1,60 +1,60 @@
 .masters {
   background: #f7f7f7;
-}
 
-.masters h2 {
-  color: $font-main-color;
-  margin-bottom: 44px;
-}
+  h2 {
+    color: $font-main-color;
+    margin-bottom: 44px;
+  }
 
-.masters h3 {
-  margin-top: 30px;
-  margin-bottom: 8px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.389;
-  text-align: center;
-  letter-spacing: 0.02em;
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    letter-spacing: 0.02em;
 
-  color: $font-main-color;
-}
+    color: $font-main-color;
+  }
 
-.masters ul {
-  display: flex;
-  justify-content: space-between;
-}
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.masters .icons-list {
-  width: 206px;
-  margin: 0 auto;
-}
+  .icons-list {
+    width: 206px;
+    margin: 0 auto;
+  }
 
-.masters__list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #ffffff;
-  width: 44px;
-  height: 44px;
-  transition: all 500ms;
-}
+  &__list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 44px;
+    height: 44px;
+    transition: all 500ms;
 
-.masters__list-link:hover {
-  background-color: #000;
-}
+    &:hover {
+      background-color: #000;
+    }
 
-.masters__list-link:hover svg,
-.masters__list-link:focus svg {
-  fill: $accent;
-}
+    &:hover svg,
+    &:focus svg {
+      fill: $accent;
+    }
+  }
 
-.masters .job-position {
-  margin-bottom: 30px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.357;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: $accent;
+  .job-position {
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.357;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accent;
+  }
 }

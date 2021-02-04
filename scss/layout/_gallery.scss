@@ -1,8 +1,10 @@
-.gallery .subtitle {
-  margin-bottom: 44px;
-}
+.gallery {
+  .subtitle {
+    margin-bottom: 44px;
+  }
 
-.gallery ul {
-  display: flex;
-  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
