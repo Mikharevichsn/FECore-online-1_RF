@@ -1,0 +1,23 @@
+.modal-open-btn,
+.form-submit-btn {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid $accent;
+  border-radius: 25px;
+  background: none;
+  cursor: pointer;
+  transition: all 250ms;
+
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+}
