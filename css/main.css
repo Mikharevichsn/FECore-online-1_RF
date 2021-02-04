@@ -121,7 +121,7 @@ h2 {
 
 .modal-open-btn,
 .form-submit-btn {
-  font-family: var(--font-main);
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
