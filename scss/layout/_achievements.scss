@@ -1,0 +1,52 @@
+.achievements .container {
+  display: flex;
+}
+
+.achievements-left {
+  width: 370px;
+}
+
+.achievements-left ul {
+  display: flex;
+}
+
+.achievements-left ul li {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.achievements-left ul li:nth-child(even) {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.achievements-right {
+  padding-left: 130px;
+  padding-right: 200px;
+}
+
+.achievements h2 {
+  color: $font-main-color;
+}
+
+.achievements-left p {
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: center;
+  color: $font-main-color;
+}
+
+.achievements-left .number {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.achievements-left sup {
+  color: $accent;
+}

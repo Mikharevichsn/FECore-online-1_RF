@@ -1,0 +1,16 @@
+.footer {
+  padding: 56px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: $font-second-color;
+}

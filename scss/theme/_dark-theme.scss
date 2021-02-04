@@ -1,0 +1,11 @@
+.subtitle-dark {
+  color: $font-main-color;
+}
+
+.subtitle-dark::before {
+  background: $font-main-color;
+}
+
+.description-dark {
+  color: $description-dark-color;
+}

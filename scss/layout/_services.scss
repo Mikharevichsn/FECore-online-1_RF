@@ -1,0 +1,51 @@
+.services {
+  background-color: #111319;
+  background-image: url('../img/bg-services.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services h2 {
+  color: #ffffff;
+}
+
+.services .prices {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services .prices ul {
+  width: 50%;
+  padding: 30px 40px;
+}
+
+.services .prices ul:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services .prices ul:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services .prices ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.services .prices ul li:last-child {
+  margin-bottom: 0;
+}
+
+.services ul span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: $font-second-color;
+}
+
+.services .modal-open-btn {
+  display: block;
+  margin: 0 auto;
+}
