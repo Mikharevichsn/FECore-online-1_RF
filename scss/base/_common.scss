@@ -42,9 +42,7 @@ h2 {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 0 31px;
 }
 
 .section {
@@ -71,8 +69,8 @@ h2 {
 
 .description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.667;
+  font-size: 16px;
+  line-height: 1.662;
   letter-spacing: 0.02em;
 }
 
@@ -116,5 +114,19 @@ h2 {
     outline: 1px solid black;
     background-origin: padding-box;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 39px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
