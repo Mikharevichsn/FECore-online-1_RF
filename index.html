@@ -51,7 +51,7 @@
   <!-- /ШАПКА САЙТА -->
   <main>
     <!-- TOP -->
-    <section class="top">
+    <!-- <section class="top">
       <div class="container top__container">
         <div class="top__left">
           <ul class="social-links top__social-links list-no-style">
@@ -68,17 +68,31 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- /TOP -->
     <!-- О НАС -->
-    <!-- <section class="about section">
+    <section class="about section">
       <div class="container">
-        <ul class="list-no-style">
+        <ul class="about-left list-no-style">
           <li>
-            <img src="./img/about-img1.jpg" alt="Барбершоп бритье бороды" width="270" height="445" />
+            <picture>
+              <source srcset="./img/about/about-desktop1.jpg 1x, ./img/about/about-desktop1@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/about/about-tablet1.jpg 1x, ./img/about/about-tablet1@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img srcset="./img/about/about-tablet1.jpg 1x, ./img/about/about-tablet1@2x.jpg 2x"
+                src="./img/about/about-tablet1.jpg" alt="Барбершоп бритье бороды" />
+            </picture>
           </li>
           <li>
-            <img src="./img/about-img2.jpg" alt="Барбершоп мужская стрижка" width="270" height="445" />
+            <picture>
+              <source srcset="./img/about/about-desktop2.jpg 1x, ./img/about/about-desktop2@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/about/about-tablet2.jpg 1x, ./img/about/about-tablet2@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img srcset="./img/about/about-tablet2.jpg 1x, ./img/about/about-tablet2@2x.jpg 2x"
+                src="./img/about/about-tablet2.jpg" alt="Барбершоп мужская стрижка" />
+            </picture>
           </li>
         </ul>
         <div class="about-right">
@@ -100,7 +114,7 @@
           </button>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- /О НАС -->
     <!-- Услуги и цены -->
     <!-- <section class="services section">

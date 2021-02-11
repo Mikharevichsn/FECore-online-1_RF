@@ -26,8 +26,8 @@ h2 {
 }
 
 h2 {
-  font-size: 42px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.78;
   letter-spacing: 0.05em;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 .section {
-  padding: 130px 0;
+  padding: 84px 0;
 }
 
 .subtitle {
@@ -123,11 +123,21 @@ h2 {
     max-width: 768px;
     margin: 0 auto;
   }
+  .section {
+    padding: 100px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 42px;
+    line-height: 1.167;
+  }
   .container {
     max-width: 1200px;
+  }
+  .section {
+    padding: 130px 0;
   }
 }
 
@@ -527,29 +537,46 @@ h2 {
   }
 }
 
-.about .container {
-  display: flex;
-}
-
-.about ul {
-  display: flex;
-}
-
-.about ul li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-right {
-  padding-left: 64px;
-  width: 544px;
-}
-
-.about .description {
-  margin-bottom: 20px;
+.about ul.about-left {
+  display: none;
 }
 
 .about .modal-open-btn {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about .container {
+    display: flex;
+  }
+  .about ul.about-left {
+    display: block;
+  }
+  .about .about-right {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about ul.about-left li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about ul.about-left {
+    display: flex;
+  }
+  .about ul.about-left li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .about-right {
+    padding-left: 64px;
+    width: 544px;
+  }
+  .about .description {
+    margin-bottom: 20px;
+  }
 }
 
 .services {

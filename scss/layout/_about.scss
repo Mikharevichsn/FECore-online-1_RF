@@ -1,26 +1,82 @@
 .about {
   .container {
-    display: flex;
   }
 
-  ul {
-    display: flex;
-
-    li:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  &-right {
-    padding-left: 64px;
-    width: 544px;
-  }
-
-  .description {
-    margin-bottom: 20px;
+  ul.about-left {
+    display: none;
   }
 
   .modal-open-btn {
     margin-top: 40px;
+  }
+}
+
+// .about {
+//   .container {
+//     display: flex;
+//   }
+
+//   ul {
+//     display: flex;
+
+//     li:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &-right {
+//     padding-left: 64px;
+//     width: 544px;
+//   }
+
+//   .description {
+//     margin-bottom: 20px;
+//   }
+
+//
+// }
+
+@media screen and (min-width: $tablet) {
+  .about {
+    .container {
+      display: flex;
+    }
+
+    ul.about-left {
+      display: block;
+    }
+    .about-right {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+  .about {
+    ul.about-left {
+      li:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about {
+    ul.about-left {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &-right {
+      padding-left: 64px;
+      width: 544px;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
   }
 }
